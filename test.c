@@ -2,6 +2,10 @@
 
 int main()
 {
+  char *a = "abc";
+  int b[] = {1,2,3};
+  char *p = a;
+  int *q = b;
 
-  printf("%c%c%c\n", '\xE6', 0xB0, 0xB4);
+  printf("%c %d %d %d %d\n", *p, *q, q > p, q < p, q == p);
 }
